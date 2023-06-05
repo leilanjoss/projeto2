@@ -3,3 +3,41 @@
     padding: 0;
     box-sizing:border-box;
 }
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    background-color: red 
+}
+.footer-top {
+   padding: 30px;
+   background-color: pink ;
+}
+
+.footer-logo{
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+
+}
+.footer-logo img{
+    display: flex;
+    background-color: green;
+    align-items: center;
+    width: 150px;
+}
+.footer-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: yellow;
+}
+.footer-app img{
+
+}
+.footer-contacts ul li a {
+    display: inline-block;
+    
+    background-color: blueviolet;
+   
+}
+
