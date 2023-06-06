@@ -3,25 +3,28 @@
     padding: 0;
     box-sizing:border-box;
 }
+footer{
+    color: white;
+}
 .footer-container {
     display: flex;
     flex-direction: column;
-    background-color: red 
+    background-color: rgb(168, 11, 11) 
 }
 .footer-top {
    padding: 30px;
-   background-color: pink ;
+   background-color: rgb(210,13,41) ;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
 }
 
 .footer-logo{
     display: flex;
     align-items: center;
-    background-color: aqua;
-
 }
 .footer-logo img{
     display: flex;
-    background-color: green;
     align-items: center;
     width: 150px;
 }
@@ -29,15 +32,83 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: yellow;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.footer-app{
+    gap:15px;
+    display: flex;
 }
 .footer-app img{
-
+    border-radius: 20px;
 }
-.footer-contacts ul li a {
-    display: inline-block;
+.footer-contacts {
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+.footer-contacts ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    color: white;
     
-    background-color: blueviolet;
-   
+    
+}
+.footer-contacts li {
+    display: flex;
+    text-decoration: none;
+}
+.footer-contacts a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.footer-contacts li :hover{
+    text-decoration: underline;
+}
+.footer-socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.footer-media {
+    display: flex;
+    gap:30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
+
+}
+.footer-link {
+    
+}
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 19px;
+    gap: 5px
+}
+
+.footer-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 25px;
+    padding-top:5px;
+    color: white;
+
+}
+.footer-copyright {
+    font-size: 15px;
+}
+.footer-address  {
+    
+}
