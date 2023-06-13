@@ -18,7 +18,13 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
 
+.header-all{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 .header-left{
     display: flex;
@@ -163,7 +169,10 @@ footer{
 .footer-container {
     display: flex;
     flex-direction: column;
-    background-color: rgb(168, 11, 11) 
+    background-color: rgb(168, 11, 11);
+    /* bottom: 0; 
+    position: absolute;
+    width: 100%; */
 }
 .footer-top {
    padding: 30px;
