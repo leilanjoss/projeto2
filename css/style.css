@@ -10,6 +10,11 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+/*HEADER*/
+
+
+
+/*FOOTER*/
 footer{
     color: white;
 }
@@ -124,9 +129,7 @@ footer{
 #twitter {
     background-color: #1da1f2;
 }
-.footer-link {
-    
-}
+
 .footer-info {
     display: flex;
     flex-direction: column;
@@ -147,7 +150,4 @@ footer{
 }
 .footer-copyright {
     font-size: 15px;
-}
-.footer-address  {
-    
 }
