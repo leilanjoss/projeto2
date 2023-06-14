@@ -355,7 +355,7 @@ footer{
 .footer-copyright {
     font-size: 15px;
 }
-
+/*Início do responsivo do FOOTER*/
 @media(max-width:655px ) {
     .footer-container{
         display: flex;
@@ -417,3 +417,4 @@ footer{
         font-display: center;
     }
 }
+/*Fim do responsivo do FOOTER*/
