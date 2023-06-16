@@ -10,7 +10,10 @@
 /*BODY*/
 body{
     font-family: 'Open Sans', sans-serif;
-    background-color: rgba(210, 210, 210, 0.737);
+    background-color: rgba(210, 210, 210, 0.737); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
 }
 
 /*HEADER*/
@@ -219,27 +222,76 @@ nav{
 /* MAIN */
 main {
     height: 100vh;
-    margin: 57px 11vh 0 11vh;
-    display: flex;
-    background-color: #1da1f2;
-    /* justify-content: space-between; */
+    margin-top: 57px; 
+    /* background-color: #1da1f2; */
 }
 
-.pesquisa {
+.title {
+    font-size: 30px;
+    font-weight: 500;
+    width: 155vh;
+    padding: 0;
+    margin: 10px 0 20px 0;
+    color:rgb(210,13,41);
+    border-bottom: 2px solid rgb(210,13,41);
+    /* background-color: #ff9807; */
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: #ff2992; */
+    width: 157vh;
+}
+
+.research {
     display: flex;
     flex-direction: column;
+    width: 31.8%;
+    /* background-color: lightyellow; */
 }
 
 .atcars {
     display: flex;
     flex-direction: column;
-    margin-left: 25%;
+    width: 65.5%;
+    /* background-color: lightblue; */
 }
+
+.description {
+    margin-top: 5px;
+}
+
+#found {
+    color: rgb(210,13,41);
+    font-weight: 500;
+}
+
+.car {
+    display: grid;
+    grid-template-areas: "image data";
+    background-color: #1da1f2;
+    width: 98%;
+    height: 40vh;
+    
+}
+
+.image {
+    grid-area: image;
+}
+
+.data {
+    grid-area: data;
+}
+
+
 /* FIM DO MAIN */
 
 /* FOOTER */
 footer{
     color: white;
+    width: 100%;
 }
 .footer-container {
     display: flex;
