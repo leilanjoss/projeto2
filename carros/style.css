@@ -229,7 +229,7 @@ main {
 .title {
     font-size: 30px;
     font-weight: 500;
-    width: 155vh;
+    width: 150vh;
     padding: 0;
     margin: 10px 0 20px 0;
     color:rgb(210,13,41);
@@ -242,7 +242,7 @@ main {
     flex-direction: row;
     justify-content: space-between;
     /* background-color: #ff2992; */
-    width: 157vh;
+    width: 150vh;
 }
 
 .research {
@@ -260,7 +260,8 @@ main {
 }
 
 .description {
-    margin-top: 5px;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
 }
 
 #found {
@@ -269,20 +270,22 @@ main {
 }
 
 .car {
-    display: grid;
-    grid-template-areas: "image data";
-    background-color: #1da1f2;
+    display:flex;
+    background-color: #ffffff;
     width: 98%;
-    height: 40vh;
-    
+    height: 35vh;
+    margin-bottom: 2vh;
+    border: 1px solid rgba(143, 142, 142, 0.541)    
 }
 
 .image {
-    grid-area: image;
+    background-color: #4267b3;
+    width: 50%;
 }
 
 .data {
-    grid-area: data;
+    background-color: rgb(255, 255, 255);
+    width: 50%;
 }
 
 
