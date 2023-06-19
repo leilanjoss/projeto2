@@ -50,30 +50,53 @@
     </header>
     <!-- MAIN -->
     <main>
-            <p class="title">Todos os repasses</p>
-            <div class="content">
-                <div class="research">
-                    <h3>FAÇA SUA BUSCA</h3>
-                </div>
-                <div class="atcars">
-                    <h3>ENCONTRE REPASSES EM TODO O BRASIL</h3>
-                    <p class="description"><span id="found">X</span> veículos encontrados</p>
+        <!-- Título da página -->
+        <p class="title">Todos os repasses</p>
+        <!-- Div de todo conteúdo editado -->
+        <div class="content">
+            <!-- Div para o formulário de pesquisa -->
+            <div class="research">
+                <h3>FAÇA SUA BUSCA</h3>
+            </div>
+            <!-- div para todos os carros que irão aparecer junto com-->
+            <div class="container-carros">
+                <h3>ENCONTRE REPASSES EM TODO O BRASIL</h3>
+                <p class="description"><span id="found">X</span> veículos encontrados</p>
                     <section class="car" id="car1">
-                        <div class="image">imagem</div>
+                        <div class="image" id="img1">
+                            <!-- <img class="foto" id="foto-car1" src="../carros/images/6490543ab19b71687180346.jpg" alt="Carro 1"> -->
+                            <div class="nfotos" id="nfotos1">
+                                <i class="fa-solid fa-image" style="color: #bababa;"></i>
+                                <span class="nimagem" id="nimagem1">X</span>
+                            </div>
+                        </div>
                         <div class="data">
-                            <h1 class="marca">VW - VOLKSWAGEN</h1>
-                            <p class="modelo">FOX 1.0 MI TOTAL FLEX 8V 5P</p>
-                            <ul class="car-data">
-                                li
-                            </ul>
+                            <div class="marca-modelo">
+                                <h1 class="marca">VW - VOLKSWAGEN</h1>
+                                <p class="modelo">FOX 1.0 MI TOTAL FLEX 8V 5P</p>
+                            </div>
+                            <div class="car-data">
+                                <div class="esquerda">
+                                    <span id="anocar1"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i>  2013/2013</span>
+                                    <span id="local1"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i>  105.000 KM</span>
+                                </div>
+                                <div class="direita">
+                                    <span id="quilom1"><i class="fa-solid fa-gauge" style="color: #bababa;"></i>  SC</span>
+                                    <span id="placa1"><i class="fa-solid fa-car" style="color: #bababa;"></i> F**-***4</span>
+                                </div>
+                            </div>
+                            <div class="etiquetas">
+                                <span class="preco" ><h3 id="preco1">R$ 28.800,00</h3></span>
+                                <span class="desconto"><h3 id="fip1">-16% da FIPE</h3></span>
+                            </div>
                         </div>
                     </section>
                     <section class="car" id="car2">
                         <div class="image"></div>
                         <div class="data"></div>
                     </section>
-                </div>
             </div>
+        </div>
     </main>
     <!-- FOOTER -->
     <footer>
