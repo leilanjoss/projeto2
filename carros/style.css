@@ -221,7 +221,7 @@ nav{
 
 /* MAIN */
 main {
-    height: 100vh;
+    
     margin-top: 57px; 
     /* background-color: #1da1f2; */
 }
@@ -289,6 +289,7 @@ main {
 
 .nfotos {
     padding: 8px;
+    color: rgb(199, 198, 198)
 }
 
 .data {
@@ -371,10 +372,11 @@ footer{
     display: flex;
     flex-direction: column;
     background-color: rgb(210,13,41) ;
-    /* bottom: 0; 
-    position: absolute;
-    width: 100%; */
+    /* bottom: 0;  */
+    /* position: absolute;
+    width: 100%;  */
 }
+
 .footer-top {
    padding: 30px;
    background-color: rgb(210,13,41) ;
