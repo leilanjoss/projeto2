@@ -284,15 +284,16 @@ main {
 .image {
     background-color: #4267b3;
     width: 50%;
-    background-image: url(../carros/images/6490543ab19b71687180346.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: top center;
 }
 
 .nfotos {
     padding: 8px;
-    color: rgb(199, 198, 198)
+    color: rgb(199, 198, 198);
+    
+
 }
 
 .data {
@@ -305,8 +306,12 @@ main {
     margin-top: 10px;
 }
 
-.modelo {
+.marca {
     font-size: 20px;
+}
+
+.modelo {
+    font-size: 16px;
 }
 
 .car-data {
