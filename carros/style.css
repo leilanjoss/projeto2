@@ -303,7 +303,7 @@ main {
 
 .marca-modelo {
     margin-left:10px;
-    margin-top: 10px;
+    margin-top: 2.5vh;
 }
 
 .marca {
@@ -319,7 +319,7 @@ main {
     display: flex;
     justify-content: space-between;
     height: 11vh;
-    margin: 2vh 4vh 2vh 10px;
+    margin: 2vh 4vh 2vh 3vh;
     padding-top: 2vh;
 }
 
@@ -350,11 +350,11 @@ main {
 .preco {
     background-color: rgba(9, 132, 9, 0.592);
     height: 4vh;
-    width: 17vh;
+    width: 15vh;
     display: flex;
     color: #ffffff;
     align-items: center;
-    padding-left: 5px;  
+    padding-left: 1vh;  
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
@@ -362,12 +362,14 @@ main {
 .desconto {
     background-color: rgba(238, 109, 3, 0.804);
     height: 4vh;
-    width: 17vh;
+    width: 15vh;
     color: #ffffff;
-    text-align: center;
+    font-size: 20px;
+    font-weight: 1000;
+    justify-content: right;
     display: flex;
     align-items: center;
-    padding-left: 9px;
+    padding-right: 1vh;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
