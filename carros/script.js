@@ -1,27 +1,15 @@
-// function corFipe() {
-//     let desconto = parseInt(document.getElementsByClassName("cor-desconto").value);
-//     console.log(desconto);
-//     if (desconto <= -15)
-// }
-
-// function corFipe() {
-// const desconto = document.getElementsByClassName("cor-desconto");
-// for (var i = 0; i < desconto.length; i++) {
-//     var valor = desconto[i].value;
-//     return parseInt(valor);
-    
-// }}
-// console.log(corFipe());
-
 function corFipe() {
-const desconto = [...document.getElementsByClassName('cor-desconto')];
-let numerosDesconto = [];
-for (let i = 0; i < desconto.length; i++) {
-  let elemento = desconto[i];
-  let textoDesconto = parseFloat(elemento.textContent);
-  numerosDesconto.push(textoDesconto);
-}
-return numerosDesconto
-}
-console.log(corFipe());
+const descontos = document.querySelectorAll(".car .desconto");
+descontos.forEach((desconto) => {
+  let porcentagem = parseInt(desconto.textContent);
 
+  if (porcentagem > -15) {
+    desconto.style.backgroundColor = 'gray';
+  }
+  if (porcentagem <= -15 && porcentagem > -20) {
+    desconto.style.backgroundColor = 'orange';
+  }
+  if (porcentagem <= -20) {
+    desconto.style.backgroundColor = 'red';
+  }
+})};

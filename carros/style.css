@@ -350,11 +350,10 @@ main {
 .preco {
     background-color: rgba(9, 132, 9, 0.592);
     height: 4vh;
-    width: 15vh;
     display: flex;
     color: #ffffff;
     align-items: center;
-    padding-left: 1vh;  
+    padding: 0 1vh;  
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
@@ -362,14 +361,13 @@ main {
 .desconto {
     background-color: rgba(238, 109, 3, 0.804);
     height: 4vh;
-    width: 15vh;
     color: #ffffff;
     font-size: 20px;
     font-weight: 1000;
     justify-content: right;
     display: flex;
     align-items: center;
-    padding-right: 1vh;
+    padding: 0 1vh;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
