@@ -13,3 +13,20 @@ document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', 
     navMenu.classList.remove('active');
     logSigMenu.classList.remove('active');
 }))
+
+// Função que troca a cor de fundo de acordo com o desconto.
+function corFipe() {
+    const descontos = document.querySelectorAll(".car .desconto");
+    descontos.forEach((desconto) => {
+      let porcentagem = parseInt(desconto.textContent);
+    
+      if (porcentagem > -15) {
+        desconto.style.backgroundColor = 'gray';
+      }
+      if (porcentagem <= -15 && porcentagem > -20) {
+        desconto.style.backgroundColor = 'orange';
+      }
+      if (porcentagem <= -20) {
+        desconto.style.backgroundColor = 'red';
+      }
+    })};
