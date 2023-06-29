@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../barradefiltro/style.css">
+    <!--Bootstrap footer-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--ÍCONES DOS CARROS -->
+    <script src="https://kit.fontawesome.com/86b6d4f29e.js" crossorigin="anonymous"></script>
+</head>
+    <title>Carros</title>
+</head>
+<body onload="corFipe()">
+    <!-- HEADER -->
+    <header class="header-all">
+        <nav>
+            <div class="header-left">
+                <div class="header-logo">
+                    <img src="../assets/logo-home2-l.png" alt="Logo">
+                </div>
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="#" class="nav-link">Todos os repasses</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Dados bancários</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Documentos</a></li>
+                    </ul>
+                    <ul class="login-sign-menu">
+                        <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Cadastre-se</a></li>
+
+                    </ul>
+            </div>
+            <div class="header-right">
+                <button class="login-btn">Login</button>
+                <p class="or-para">ou</p>
+                <button class="sign-btn">Cadastre-se</button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <!-- INICIO BARRA DE FILTROS -->
+        <div class="imagem-banner-top">
+            <img src="../assets/bannertop.png" alt="Banner Luciandro" id="banner-top">
+        </div>
+        <div class="container">
+            <div class="formularios">
+                <div class="formulario1">
+                    <form>
+                        <select id="qtde-anuncios">
+                            <option value="5 anuncios por pagina">5 anúncios por página</option>
+                            <option value="10 anuncios por pagina">10 anúncios por página</option>
+                            <option value="15 anuncios por pagina">15 anúncios por página</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="formulario2">
+                    <form>
+                        <select id="ordenar">
+                            <option value="ordenar por">Ordenar por</option>
+                            <option value="menorpreco">Menor preço</option>
+                            <option value="maiorpreco">Maior preço</option>
+                            <option value="ano">Ano</option>
+                            <option value="quilometragem">Quilometragem</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Título da página -->
+        <p class="title">Todos os repasses</p>
+        <!-- Div de todo conteúdo editado -->
+        <div class="content">
+            <!-- Div para o formulário de pesquisa -->
+            <div class="research">
+                <h3>FAÇA SUA BUSCA</h3>
+            </div>
+            <!-- div para todos os carros que irão aparecer junto com-->
+            <div class="container-carros">
+                <h3>ENCONTRE REPASSES EM TODO O BRASIL</h3>
+                <p class="description"><span id="found">X</span> veículos encontrados</p>
+                <div id="todos-carros">
+                    <!-- carro 1 -->
+                    <section class="car" id="car1">
+                        <div class="image" id="img1" style="background-image: url(../carros/images/img1.jpg);">
+                            <div class="nfotos" id="nfotos1">
+                                <i class="fa-solid fa-image" style="color: #bababa;"></i>
+                                <span class="nimagem" id="nimagem1">X</span>
+                            </div>
+                        </div>
+                        <div class="data">
+                            <div class="marca-modelo">
+                                <h1 class="marca" id="marca1">VW - VOLKSWAGEN</h1>
+                                <p class="modelo" id="modelo1">FOX 1.0 MI TOTAL FLEX 8V 5P</p>
+                            </div>
+                            <div class="car-data">
+                                <div class="esquerda">
+                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar1">  2013/2013</p></span>
+                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="local1">  105.000 KM</p></span>
+                                </div>
+                                <div class="direita">
+                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom1">  SC</p></span>
+                                    <span class="info"><i class="fa-solid fa-car" style="color: #bababa;"></i><p id="placa1"> F**-***4</p></span>
+                                </div>
+                            </div>
+                            <div class="etiquetas">
+                                <span class="preco" ><h3 id="preco1">R$ 28.800,00</h3></span>
+                                <span class="desconto"><h4 class="cor-desconto" id="fip1">-16</h4>% da FIPE</span>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- carro 2 -->
+                    <section class="car" id="car2">
+                        <div class="image" id="img2" style="background-image: url(../carros/images/img2.jpg);">
+                            <div class="nfotos" id="nfotos2">
+                                <i class="fa-solid fa-image" style="color: #bababa;"></i>
+                                <span class="nimagem" id="nimagem2">X</span>
+                            </div>
+                        </div>
+                        <div class="data">
+                            <div class="marca-modelo">
+                                <h1 class="marca" id="marca2">NISSAN</h1>
+                                <p class="modelo" id="modelo2">VERSA 1.0 12V FLEXSTART 4P MEC.</p>
+                            </div>
+                            <div class="car-data">
+                                <div class="esquerda">
+                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar2">2018/2019</p></span>
+                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="local2">  SC</p></span>
+                                </div>
+                                <div class="direita">
+                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom2">  1 KM</p></span>
+                                    <span class="info"><i class="fa-solid fa-car" style="color: #bababa;"></i><p id="placa2">  Q**-***4</p></span>
+                                </div>
+                            </div>
+                            <div class="etiquetas">
+                                <span class="preco" ><h3 id="preco2">R$ 39.990,00</h3></span>
+                                <span class="desconto"><h4 class="cor-desconto" id="fip2">-17</h4>% da FIPE</span>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- carro 3 -->
+                    <section class="car" id="car3">
+                        <div class="image" id="img3" style="background-image: url(../carros/images/img3.jpg);">
+                            <div class="nfotos" id="nfotos3">
+                                <i class="fa-solid fa-image" style="color: #bababa;"></i>
+                                <span class="nimagem" id="nimagem3">X</span>
+                            </div>
+                        </div>
+                        <div class="data">
+                            <div class="marca-modelo">
+                                <h1 class="marca" id="marca3">HYUNDAI</h1>
+                                <p class="modelo" id="modelo3">HB20X PREMIUM 1.6 FLEX 16V AUT.</p>
+                            </div>
+                            <div class="car-data">
+                                <div class="esquerda">
+                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar3">2014/2015</p></span>
+                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="local3">SC</p></span>
+                                </div>
+                                <div class="direita">
+                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom3">114.000 KM</p></span>
+                                    <span class="info"><i class="fa-solid fa-car" style="color: #bababa;"></i><p id="placa3">M**-***8</p></span>
+                                </div>
+                            </div>
+                            <div class="etiquetas">
+                                <span class="preco" ><h3 id="preco3">R$ 47.990,00</h3></span>
+                                <span class="desconto"><h4 class="cor-desconto" id="fip3">-17</h4>% da FIPE</span>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- carro 4 -->
+                    <section class="car" id="car4">
+                        <div class="image" id="img4" style="background-image: url(../carros/images/img4.jpg);">
+                            <div class="nfotos" id="nfotos4">
+                                <i class="fa-solid fa-image" style="color: #bababa;"></i>
+                                <span class="nimagem" id="nimagem2">X</span>
+                            </div>
+                        </div>
+                        <div class="data">
+                            <div class="marca-modelo">
+                                <h1 class="marca" id="marca4">VW - VOLKSWAGEN</h1>
+                                <p class="modelo" id="modelo4">GOL (NOVO) 1.0 MI TOTAL FLEX 8V 4P</p>
+                            </div>
+                            <div class="car-data">
+                                <div class="esquerda">
+                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar2">2012/2013</p></span>
+                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="local2">SC</p></span>
+                                </div>
+                                <div class="direita">
+                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom2">268.000 KM</p></span>
+                                    <span class="info"><i class="fa-solid fa-car" style="color: #bababa;"></i><p id="placa2">M**-***4</p></span>
+                                </div>
+                            </div>
+                            <div class="etiquetas">
+                                <span class="preco" ><h3 id="preco2">R$ 23.990,00</h3></span>
+                                <span class="desconto"><h4 class="cor-desconto" id="fip2">-24</h4>% da FIPE</span>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- carro 5 -->
+                    <section class="car" id="car5">
+                        <div class="image" id="img5" style="background-image: url(../carros/images/img5.1.jpg);">
+                            <div class="nfotos" id="nfotos5">
+                                <i class="fa-solid fa-image" style="color: #bababa;"></i>
+                                <span class="nimagem" id="nimagem5">X</span>
+                            </div>
+                        </div>
+                        <div class="data">
+                            <div class="marca-modelo">
+                                <h1 class="marca" id="marca5">FIAT</h1>
+                                <p class="modelo" id="modelo5">MOBI LIKE 1.0 FIRE FLEX 5P.</p>
+                            </div>
+                            <div class="car-data">
+                                <div class="esquerda">
+                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar5">2020/2021</p></span>
+                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="local5">SC</p></span>
+                                </div>
+                                <div class="direita">
+                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom5">80.000 KM</p></span>
+                                    <span class="info"><i class="fa-solid fa-car" style="color: #bababa;"></i><p id="placa5">R**-***5</p></span>
+                                </div>
+                            </div>
+                            <div class="etiquetas">
+                                <span class="preco" ><h3 id="preco5">R$ 43.990,00</h3></span>
+                                <span class="desconto"><h4 class="cor-desconto" id="fip5">-15</h4>% da FIPE</span>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- carro 6 -->
+                    <section class="car" id="car6">
+                        <div class="image" id="img6" style="background-image: url(../carros/images/img6.jpg);">
+                            <div class="nfotos" id="nfotos6">
+                                <i class="fa-solid fa-image" style="color: #bababa;"></i>
+                                <span class="nimagem" id="nimagem6">X</span>
+                            </div>
+                        </div>
+                        <div class="data">
+                            <div class="marca-modelo">
+                                <h1 class="marca" id="marca6">FORD</h1>
+                                <p class="modelo" id="modelo6">FUSION TITANIUM 2.0 GTDI ECOBO. AWD AUT.</p>
+                            </div>
+                            <div class="car-data">
+                                <div class="esquerda">
+                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar6">2017/2018</p></span>
+                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="local6">SC</p></span>
+                                </div>
+                                <div class="direita">
+                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom6">45.000 KM</p></span>
+                                    <span class="info"><i class="fa-solid fa-car" style="color: #bababa;"></i><p id="placa6">Q**-***9</p></span>
+                                </div>
+                            </div>
+                            <div class="etiquetas">
+                                <span class="preco" ><h3 id="preco6">R$ 104.990,00</h3></span>
+                                <span class="desconto"><h4 class="cor-desconto" id="fip6">-9</h4>% da FIPE</span>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- carro 7 -->
+                    <section class="car" id="car7">
+                        <div class="image" id="img7" style="background-image: url(../carros/images/img7.jpg);">
+                            <div class="nfotos" id="nfotos7">
+                                <i class="fa-solid fa-image" style="color: #bababa;"></i>
+                                <span class="nimagem" id="nimagem7">X</span>
+                            </div>
+                        </div>
+                        <div class="data">
+                            <div class="marca-modelo">
+                                <h1 class="marca" id="marca7">CITROËN</h1>
+                                <p class="modelo" id="modelo7">C3 EXCL./EXCL.SOLAR./SONORA 1.6 FLEX AUT.</p>
+                            </div>
+                            <div class="car-data">
+                                <div class="esquerda">
+                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar7">2011/2012</p></span>
+                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="local7">SC</p></span>
+                                </div>
+                                <div class="direita">
+                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom7">70.000 KM</p></span>
+                                    <span class="info"><i class="fa-solid fa-car" style="color: #bababa;"></i><p id="placa7">E**-***0</p></span>
+                                </div>
+                            </div>
+                            <div class="etiquetas">
+                                <span class="preco" ><h3 id="preco7">R$ 21.990,00</h3></span>
+                                <span class="desconto"><h4 class="cor-desconto" id="fip7">-32</h4>% da FIPE</span>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- carro 8 -->
+                    <section class="car" id="car8">
+                        <div class="image" id="img8" style="background-image: url(../carros/images/img8.jpg);">
+                            <div class="nfotos" id="nfotos8">
+                                <i class="fa-solid fa-image" style="color: #bababa;"></i>
+                                <span class="nimagem" id="nimagem8">X</span>
+                            </div>
+                        </div>
+                        <div class="data">
+                            <div class="marca-modelo">
+                                <h1 class="marca" id="marca8">RENAULT</h1>
+                                <p class="modelo" id="modelo8">LOGAN DYNA. EASYR HI-FLEX 1.6 8V AUT.</p>
+                            </div>
+                            <div class="car-data">
+                                <div class="esquerda">
+                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar8">2015/2016</p></span>
+                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="local8">SC</p></span>
+                                </div>
+                                <div class="direita">
+                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom8">99.000 KM</p></span>
+                                    <span class="info"><i class="fa-solid fa-car" style="color: #bababa;"></i><p id="placa8">Q**-***4</p></span>
+                                </div>
+                            </div>
+                            <div class="etiquetas">
+                                <span class="preco" ><h3 id="preco8">R$ 35.990,00</h3></span>
+                                <span class="desconto"><h4 class="cor-desconto" id="fip8">-13</h4>% da FIPE</span>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- carro 9 -->
+                    <section class="car" id="car9">
+                        <div class="image" id="img9" style="background-image: url(../carros/images/img9.jpg);">
+                            <div class="nfotos" id="nfotos9">
+                                <i class="fa-solid fa-image" style="color: #bababa;"></i>
+                                <span class="nimagem" id="nimagem9">X</span>
+                            </div>
+                        </div>
+                        <div class="data">
+                            <div class="marca-modelo">
+                                <h1 class="marca" id="marca9">MITSUBISHI</h1>
+                                <p class="modelo" id="modelo9">PAJERO SPORT HPE 3.5 4X4 200CV AUT.</p>
+                            </div>
+                            <div class="car-data">
+                                <div class="esquerda">
+                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar9">2007/2007 </p></span>
+                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="local9">SC</p></span>
+                                </div>
+                                <div class="direita">
+                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom9">1 KM</p></span>
+                                    <span class="info"><i class="fa-solid fa-car" style="color: #bababa;"></i><p id="placa9">A**-***4</p></span>
+                                </div>
+                            </div>
+                            <div class="etiquetas">
+                                <span class="preco" ><h3 id="preco9">R$ 35.990,00</h3></span>
+                                <span class="desconto"><h4 class="cor-desconto" id="fip9">-21</h4>% da FIPE</span>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- carro 10 -->
+                    <section class="car" id="car10">
+                        <div class="image" id="img10" style="background-image: url(../carros/images/img10.jpg);">
+                            <div class="nfotos" id="nfotos10">
+                                
+                                <i class="fa-solid fa-image" style="color: #bababa;"></i>
+                                <span class="nimagem" id="nimagem10">X</span>
+                            </div>
+                        </div>
+                        <div class="data">
+                            <div class="marca-modelo">
+                                <h1 class="marca" id="marca10">HONDA</h1>
+                                <p class="modelo" id="modelo10">CR-V LX 2.0 16V 2WD/2.0 FLEXONE AUT.</p>
+                            </div>
+                            <div class="car-data">
+                                <div class="esquerda">
+                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar10">2009/2009</p></span>
+                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="local10">SC</p></span>
+                                </div>
+                                <div class="direita">
+                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom10">1 KM</p></span>
+                                    <span class="info"><i class="fa-solid fa-car" style="color: #bababa;"></i><p id="placa10">E**-***0</p></span>
+                                </div>
+                            </div>
+                            <div class="etiquetas">
+                                <span class="preco" ><h3 id="preco10">R$ 36.990,00</h3></span>
+                                <span class="desconto"><h4 class="cor-desconto" id="fip10">-24</h4>% da FIPE</span>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- carro 11 -->
+                    <section class="car" id="car11">
+                        <div class="image" id="img11" style="background-image: url(../carros/images/img11.jpg);">
+                            <div class="nfotos" id="nfotos11">
+                                <i class="fa-solid fa-image" style="color: #bababa;"></i>
+                                <span class="nimagem" id="nimagem11">X</span>
+                            </div>
+                        </div>
+                        <div class="data">
+                            <div class="marca-modelo">
+                                <h1 class="marca" id="marca11">HYUNDAI</h1>
+                                <p class="modelo" id="modelo11">HB20 UNIQUE 1.0 FLEX 12V MEC.</p>
+                            </div>
+                            <div class="car-data">
+                                <div class="esquerda">
+                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar11">2018/2019</p></span>
+                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="local11">SC</p></span>
+                                </div>
+                                <div class="direita">
+                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom11">53.000 KM</p></span>
+                                    <span class="info"><i class="fa-solid fa-car" style="color: #bababa;"></i><p id="placa11">Q**-***1</p></span>
+                                </div>
+                            </div>
+                            <div class="etiquetas">
+                                <span class="preco" ><h3 id="preco11">R$ 46.500,00</h3></span>
+                                <span class="desconto"><h4 class="cor-desconto" id="fip11">-15</h4>% da FIPE</span>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- carro 12 -->
+                    <section class="car" id="car12">
+                        <div class="image" id="img12" style="background-image: url(../carros/images/img12.jpg);">
+                            <div class="nfotos" id="nfotos12">
+                                <i class="fa-solid fa-image" style="color: #bababa;"></i>
+                                <span class="nimagem" id="nimagem12">X</span>
+                            </div>
+                        </div>
+                        <div class="data">
+                            <div class="marca-modelo">
+                                <h1 class="marca" id="marca12">FIAT</h1>
+                                <p class="modelo" id="modelo12">ARGO 1.0 6V FLEX.</p>
+                            </div>
+                            <div class="car-data">
+                                <div class="esquerda">
+                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar12">2018/2019</p></span>
+                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="local12">SC</p></span>
+                                </div>
+                                <div class="direita">
+                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom12">80.000 KM</p></span>
+                                    <span class="info"><i class="fa-solid fa-car" style="color: #bababa;"></i><p id="placa12">Q**-***2</p></span>
+                                </div>
+                            </div>
+                            <div class="etiquetas">
+                                <span class="preco" ><h3 id="preco12">R$ 47.500,00</h3></span>
+                                <span class="desconto"><h4 class="cor-desconto" id="fip12">-13</h4>% da FIPE</span>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- carro 13 -->
+                    <section class="car" id="car13">
+                        <div class="image" id="img13" style="background-image: url(../carros/images/img13.jpg);">
+                            <div class="nfotos" id="nfotos13">
+                                <i class="fa-solid fa-image" style="color: #bababa;"></i>
+                                <span class="nimagem" id="nimagem13">X</span>
+                            </div>
+                        </div>
+                        <div class="data">
+                            <div class="marca-modelo">
+                                <h1 class="marca" id="marca13">GM - CHEVROLET</h1>
+                                <p class="modelo" id="modelo13">JOY PLUS BLACK ED.1.0 8V 4P FLEX MEC.</p>
+                            </div>
+                            <div class="car-data">
+                                <div class="esquerda">
+                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar13">2020/2021</p></span>
+                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="local13">SC</p></span>
+                                </div>
+                                <div class="direita">
+                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom13">59.000 KM</p></span>
+                                    <span class="info"><i class="fa-solid fa-car" style="color: #bababa;"></i><p id="placa13">R**-***5</p></span>
+                                </div>
+                            </div>
+                            <div class="etiquetas">
+                                <span class="preco" ><h3 id="preco13">R$ 53.990,00</h3></span>
+                                <span class="desconto"><h4 class="cor-desconto" id="fip13">-16</h4>% da FIPE</span>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- carro 14 -->
+                    <section class="car" id="car14">
+                        <div class="image" id="img14" style="background-image: url(../carros/images/img14.jpg);">
+                            <div class="nfotos" id="nfotos14">
+                                <i class="fa-solid fa-image" style="color: #bababa;"></i>
+                                <span class="nimagem" id="nimagem14">X</span>
+                            </div>
+                        </div>
+                        <div class="data">
+                            <div class="marca-modelo">
+                                <h1 class="marca" id="marca14">GM - CHEVROLET</h1>
+                                <p class="modelo" id="modelo14">JOY HATCH1.0 8V FLEX 5P MEC.</p>
+                            </div>
+                            <div class="car-data">
+                                <div class="esquerda">
+                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar14">2019/2020</p></span>
+                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="local14">SC</p></span>
+                                </div>
+                                <div class="direita">
+                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom14">69.000 KM</p></span>
+                                    <span class="info"><i class="fa-solid fa-car" style="color: #bababa;"></i><p id="placa14">Q**-***1</p></span>
+                                </div>
+                            </div>
+                            <div class="etiquetas">
+                                <span class="preco" ><h3 id="preco14">R$ 49.990,00</h3></span>
+                                <span class="desconto"><h4 class="cor-desconto" id="fip14">-11</h4>% da FIPE</span>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- carro 15 -->
+                    <section class="car" id="car15">
+                        <div class="image" id="img15" style="background-image: url(../carros/images/img15.jpg);">
+                            <div class="nfotos" id="nfotos15">
+                                <i class="fa-solid fa-image" style="color: #bababa;"></i>
+                                <span class="nimagem" id="nimagem15">X</span>
+                            </div>
+                        </div>
+                        <div class="data">
+                            <div class="marca-modelo">
+                                <h1 class="marca" id="marca15">FORD</h1>
+                                <p class="modelo" id="modelo15">KA+ SEDAN 1.0 TICVT FLEX 4P</p>
+                            </div>
+                            <div class="car-data">
+                                <div class="esquerda">
+                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar15">2021/2021</p></span>
+                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="local15">SC</p></span>
+                                </div>
+                                <div class="direita">
+                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom15">1 KM</p></span>
+                                    <span class="info"><i class="fa-solid fa-car" style="color: #bababa;"></i><p id="placa15">J**-***7</p></span>
+                                </div>
+                            </div>
+                            <div class="etiquetas">
+                                <span class="preco" ><h3 id="preco15">R$ 45.990,00</h3></span>
+                                <span class="desconto"><h4 class="cor-desconto" id="fip15">-18</h4>% da FIPE</span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <!--Todo o footer-->
+    <div class="footer-container">
+        <!--Parte de cima do footer-->
+        <div class="footer-top">
+            <!--Logo-->
+            <div class="footer-logo">
+                <img src="../assets/logo.png" alt="Logo Luciandro">
+            </div>
+            <!--Aplicativos e contato -->
+            <div class="footer-center">
+                <div class="footer-app">
+                    <img src="../assets/apple-store.png" alt="Apple Store">
+                    <img src="../assets/play-store.png" alt="Play Store">
+                </div>
+                <div class="footer-contacts">
+                    <ul>
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-socials">
+                <div class="footer-media">
+                    <a class="footer-link" href="#" target="_blank" id="instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="footer-link" href="#" target="_blank" id="facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="footer-link" href="#" target="_blank" id="twitter"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="footer-info">
+                    <p>vendas@luciandrorepasses.com.br</p>
+                    <p>+55 (48) 32441057 / 32412472</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                <p>© 2018 - 2023 - Todos os direitos reservados</p>
+            </div>
+            <div class="footer-address"> 
+                <p>Avenida Josué Di Bernardi, 912, Capoeiras - Florianópolis/SC CEP: 88.095-720</p>
+            </div>
+        </div>
+    </div>   
+    </footer>
+</body>
+<script src="../js/script.js"></script>
+<!--FALTA O SCRIPT DA BARRA DE FILTRO-->
+</html>
