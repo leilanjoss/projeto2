@@ -15,8 +15,6 @@
     <!--ÍCONES DOS CARROS -->
     <script src="https://kit.fontawesome.com/86b6d4f29e.js" crossorigin="anonymous"></script>
 </head>
-    <title>Carros</title>
-</head>
 <body onload="corFipe()">
     <!-- HEADER -->
     <header class="header-all">
@@ -58,6 +56,60 @@
             <!-- Div para o formulário de pesquisa -->
             <div class="research">
                 <h3>FAÇA SUA BUSCA</h3>
+                <form id="search-form">
+                    <label for="brand">Marca:</label>
+                    <select id="brand">
+                      <option value="">Selecione a marca</option>
+                      <option value="Ford">Ford</option>
+                      <option value="Citroen">Citroën</option>
+                      <option value="Renault">Renault</option>
+                      <option value="Fiat">Fiat</option>
+                      <option value="MITSUBISHI">Mitsubishi</option>
+                      <option value="Nissan">Nissan</option>
+                      <option value="HYUNDAI">Hyundai</option>
+                      <option value="VOLKSWAGEN">Volkswagen</option>
+                      <option value="Honda">Honda</option>
+                      <option value="CHEVROLET">Chevrolet</option>
+                    </select>
+              
+                    <label for="model">Modelo:</label>
+                    <select id="model">
+                      <option value="">Selecione o modelo</option>
+                      <option value="FOX">FOX</option>
+                      <option value="VERSA">Versa</option>
+                      <option value="HB20X">HB20X PREMIUM</option>
+                      <option value="GOL">GOL</option>
+                      <option value="MOBI">Mobi</option>
+                      <option value="FUSION">Fusion</option>
+                      <option value="C3">C3</option>
+                      <option value="LOGAN">LOGAN</option>
+                      <option value="PAJERO">PAJERO</option>
+                      <option value="CR-V">CR-V</option>
+                      <option value="HB20">HB20</option>
+                      <option value="ARGO">ARGO</option>
+                      <option value="JOY">JOY</option>
+                      <option value="KA">KA</option>
+                    </select>
+              
+                    <label for="year">Ano:</label>
+                    <select id="year">
+                      <option value="">Selecione o ano</option>
+                      <option value="2007">2007</option>
+                      <option value="2009">2009</option>
+                      <option value="2011">2011</option>
+                      <option value="2013">2013</option>
+                      <option value="2014">2014</option>
+                      <option value="2015">2015</option>
+                      <option value="2017">2017</option>
+                      <option value="2018">2018</option>
+                      <option value="2019">2019</option>
+                      <option value="2020">2020</option>
+                      <option value="2021">2021</option>
+                    </select>
+              
+                    <button type="submit">Pesquisar</button>
+                  </form>
+                  <div id="search-results"></div>
             </div>
             <!-- div para todos os carros que irão aparecer junto com-->
             <div class="container-carros">
