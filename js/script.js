@@ -30,3 +30,55 @@ function corFipe() {
         desconto.style.backgroundColor = 'red';
       }
     })};
+
+    // search // 
+
+// Função para executar a busca
+function executarBusca() {
+  // Obtém o valor da marca, modelo e ano pesquisados
+  const marcaPesquisada = document.getElementById('marca-select').value;
+  const modeloPesquisado = document.getElementById('modelo-select').value;
+  const anoPesquisado = document.getElementById('ano-select').value;
+  
+  // Obtém todas as divs de carro
+  const carros = document.getElementsByClassName('car');
+  let contadorCarros = 0;
+  
+  // Percorre todas as divs de carro
+  for (let i = 0; i < carros.length; i++) {
+    const carro = carros[i];
+    
+    // Obtém os elementos dentro da div do carro
+    const marcaElemento = carro.querySelector('.marca');
+    const modeloElemento = carro.querySelector('.modelo');
+    const anoElemento = carro.querySelector('.info');
+    
+    // Obtém o texto dos elementos
+    const marcaTexto = marcaElemento.textContent.trim();
+    const modeloTexto = modeloElemento.textContent.trim();
+    const anoTexto = anoElemento.textContent.trim();
+    
+    // Verifica se os critérios de pesquisa correspondem aos dados do carro
+    const correspondeMarca = marcaPesquisada === '' || marcaTexto.includes(marcaPesquisada);
+    const correspondeModelo = modeloPesquisado === '' || modeloTexto.includes(modeloPesquisado);
+    const correspondeAno = anoPesquisado === '' || anoTexto.includes(anoPesquisado);
+    
+    // Exibe ou oculta a div do carro de acordo com a correspondência dos critérios
+    if (correspondeMarca && correspondeModelo && correspondeAno) {
+      carro.style.display = 'flex';
+      contadorCarros++;
+    } else {
+      carro.style.display = 'none';
+    }
+  }
+  
+  // Atualiza o contador de veículos encontrados
+  const veiculosEncontrados = document.getElementById('found');
+  veiculosEncontrados.textContent = contadorCarros;
+}
+
+// Adiciona eventos de alteração aos elementos de seleção para executar a busca
+document.getElementById('marca-select').addEventListener('change', executarBusca);
+document.getElementById('modelo-select').addEventListener('change', executarBusca);
+document.getElementById('ano-select').addEventListener('change', executarBusca);
+
