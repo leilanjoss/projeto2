@@ -9,11 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../carros/style.css">
     <!--Bootstrap footer-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--ÍCONES DOS CARROS -->
     <script src="https://kit.fontawesome.com/86b6d4f29e.js" crossorigin="anonymous"></script>
+</head>
+    <title>Carros</title>
 </head>
 <body onload="corFipe()">
     <!-- HEADER -->
@@ -54,63 +56,8 @@
         <!-- Div de todo conteúdo editado -->
         <div class="content">
             <!-- Div para o formulário de pesquisa -->
-            <div class="search-container">
+            <div class="research">
                 <h3>FAÇA SUA BUSCA</h3>
-                <form id="search-form">
-                    <label for="marca-select">Marca:</label>
-                    <select id="marca-select">
-                      <option value="">Selecione a marca</option>
-                      <option value="FORD">FORD</option>
-                      <option value="CITROEN">CITROEN</option>
-                      <option value="RENAULT">RENAULT</option>
-                      <option value="FIAT">FIAT</option>
-                      <option value="MITSUBISHI">MITSUBISHI</option>
-                      <option value="NISSAN">NISSAN</option>
-                      <option value="HYUNDAI">HYUNDAI</option>
-                      <option value="VW - VOLKSWAGEN">VOLKSWAGEN</option>
-                      <option value="HONDA">HONDA</option>
-                      <option value="CHEVROLET">CHEVROLET</option>
-                    </select>
-              
-                    <label for="modelo-select">Modelo:</label>
-                    <select id="modelo-select">
-                      <option value="">Selecione o modelo</option>
-                      <option value="FOX 1.0 MI TOTAL FLEX 8V 5P">FOX</option>
-                      <option value="VERSA 1.0 12V FLEXSTART 4P MEC">VERSA 1.0</option>
-                      <option value="HB20X PREMIUM 1.6 FLEX 16V AUT">HB20X PREMIUM </option>
-                      <option value="GOL (NOVO)">GOL NOVO</option>
-                      <option value="MOBI">MOBI LIKE</option>
-                      <option value="FUSION">FUSION TITANIUM</option>
-                      <option value="C3">C3 </option>
-                      <option value="LOGAN DYNA. EASYR HI-FLEX 1.6 8V AUT">LOGAN </option>
-                      <option value="PAJERO SPORT HPE 3.5 4X4 200CV AUT">PAJERO SPORT </option>
-                      <option value="CR-V LX 2.0 16V 2WD/2.0 FLEXONE AUT">CR-V LX </option>
-                      <option value="HB20 UNIQUE 1.0 FLEX 12V MEC">HB20 UNIQUE </option>
-                      <option value="ARGO 1.0 6V FLEX">ARGO</option>
-                      <option value="JOY PLUS BLACK ED.1.0 8V 4P FLEX MEC">JOY PLUS</option>
-                      <option value="JOY HATCH1.0 8V FLEX 5P MEC">JOY HATCH1</option>
-                      <option value="KA+ SEDAN 1.0 TICVT FLEX 4P">KA</option>
-                    </select>
-              
-                    <label for="ano-select">Ano:</label>
-                    <select id="ano-select" >
-                      <option value="">Selecione o ano</option>
-                      <option value="2007">2007</option>
-                      <option value="2009">2009</option>
-                      <option value="2011">2011</option>
-                      <option value="2013">2013</option>
-                      <option value="2014">2014</option>
-                      <option value="2015">2015</option>
-                      <option value="2017">2017</option>
-                      <option value="2018">2018</option>
-                      <option value="2019">2019</option>
-                      <option value="2020">2020</option>
-                      <option value="2021">2021</option>
-                    </select>
-              
-                    <button type="submit">Limpar pesquisa</button>
-                  </form>
-                  
             </div>
             <!-- div para todos os carros que irão aparecer junto com-->
             <div class="container-carros">
@@ -215,7 +162,7 @@
                         <div class="data">
                             <div class="marca-modelo">
                                 <h1 class="marca" id="marca4">VW - VOLKSWAGEN</h1>
-                                <p class="modelo" id="modelo4">GOL (NOVO)</p>
+                                <p class="modelo" id="modelo4">GOL (NOVO) 1.0 MI TOTAL FLEX 8V 4P</p>
                             </div>
                             <div class="car-data">
                                 <div class="esquerda">
@@ -301,7 +248,7 @@
                         </div>
                         <div class="data">
                             <div class="marca-modelo">
-                                <h1 class="marca" id="marca7">CITROEN</h1>
+                                <h1 class="marca" id="marca7">CITROËN</h1>
                                 <p class="modelo" id="modelo7">C3 EXCL./EXCL.SOLAR./SONORA 1.6 FLEX AUT.</p>
                             </div>
                             <div class="car-data">
@@ -603,5 +550,5 @@
     </div>   
     </footer>
 </body>
-<script src="../js/script.js"></script>
+<script src="../carros/script.js"></script>
 </html>
