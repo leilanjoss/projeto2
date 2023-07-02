@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <title>busca</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <div id="pagina">
+        <div id="blocoBusca">
+            <div>
+                <h1>Faça sua Busca</h1>
+                <p>Use as opções abaixo para pesquisar por veículos de sua preferência</p>
+            </div>
+            <div class="busca_e_botões">
+                <div id="dados" class="busca"><h4>Dados</h4>
+                    <div id="opcDados" class="show">
+                        <div class="seletor">
+                            <i class="fa-solid fa-gears"></i>
+                            <select id="marca">
+                                <option value=""><h6>Selecione a Marca</h6></option>
+                                <option value="Ford">Ford</option>
+                                <option value="Citroen">Citroën</option>
+                                <option value="Renault">Renault</option>
+                                <option value="Fiat">Fiat</option>
+                                <option value="MITSUBISHI">Mitsubishi</option>
+                                <option value="Nissan">Nissan</option>
+                                <option value="HYUNDAI">Hyundai</option>
+                                <option value="VOLKSWAGEN">Volkswagen</option>
+                                <option value="Honda">Honda</option>
+                                <option value="CHEVROLET">Chevrolet</option>
+                            </select>
+                        </div>
+                        <div class="seletor">
+                            <i class="fa-solid fa-car-side"></i>
+                            <select id="modelo">
+                                <option value=""><h6>Selecione o Modelo</h6></option>
+                            </select>
+                        </div>
+                        
+                        <div class="seletor">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <select id="ano">
+                                <option value=""><h6>Ano Min</h6></option>
+                            </select>
+                        </div>
+                        <div class="seletor">
+                            <i class="fa-solid fa-check-to-slot"></i>
+                            <select id="versao">
+                                <option value=""><h6>Selecione a Versão</h6></option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div id="localização" class="busca"><h4>Localização</h4></div>
+                <div id="opGerais" class="busca"><h4>Opções Gerais</h4></div>
+                <div id="buscar"><button class="btn">Buscar</button></div>
+                <div id="limpar"><button class="btn">Limpar</button></div>
+            </div>
+        </div>
+        <div id="blocoCarros"><h2>ENCONTRE REPASSES EM TODO BRASIL</h2></div>
+    </div>
+
+    <script src="/js/busca.js"></script>
+</body>
+</html>
