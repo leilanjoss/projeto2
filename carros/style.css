@@ -373,6 +373,7 @@ main {
 @media(max-width:1170px ) {
     .content {
         width: 120vh;
+        justify-content: left;
     }
 
     .car {
@@ -386,9 +387,14 @@ main {
         font-weight: 500;
         width: 76vmax;
     }
+    
     .content {
         flex-direction: column;
         align-items: center;
+    }
+
+    .research {
+        width: 66%;
     }
 }
 
@@ -405,6 +411,10 @@ main {
     }
 
     .container-carros {
+        width: 75%;
+    }
+
+    .research {
         width: 75%;
     }
 
