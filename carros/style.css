@@ -220,27 +220,27 @@ nav{
 
 /* MAIN */
 main {
-    
     margin-top: 57px; 
-    /* background-color: #1da1f2; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title {
     font-size: 30px;
     font-weight: 500;
-    width: 150vh;
+    width: 90vmax;
     padding: 0;
     margin: 10px 0 20px 0;
     color:rgb(210,13,41);
     border-bottom: 2px solid rgb(210,13,41);
-    /* background-color: #ff9807; */
 }
 
 .content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* background-color: #ff2992; */
     width: 150vh;
 }
 
@@ -248,7 +248,6 @@ main {
     display: flex;
     flex-direction: column;
     width: 31.8%;
-    /* background-color: lightyellow; */
 }
 
 
@@ -256,7 +255,6 @@ main {
     display: flex;
     flex-direction: column;
     width: 65.5%;
-    /* background-color: lightblue; */
 }
 
 
@@ -315,7 +313,6 @@ main {
 }
 
 .car-data {
-    /* background-color: #1da1f2; */
     display: flex;
     justify-content: space-between;
     height: 11vh;
@@ -341,14 +338,13 @@ main {
 }
 
 .etiquetas {
-    /* background-color: #ff2992; */
     margin-top: 5vh;
     display: flex;
     justify-content: space-between;
 }
 
 .preco {
-    background-color: rgba(9, 132, 9, 0.592);
+    background-color: rgb(9, 132, 9);
     height: 4vh;
     display: flex;
     color: #ffffff;
@@ -372,7 +368,77 @@ main {
     border-bottom-left-radius: 20px;
 }
 
+/* Responsividade da página */
 
+@media(max-width:1170px ) {
+    .content {
+        width: 120vh;
+    }
+
+    .car {
+        height: 33vh;
+    }
+}
+
+@media(max-width:935px ) {
+    .title {
+        font-size: 30px;
+        font-weight: 500;
+        width: 76vmax;
+    }
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width:625px ) {
+    
+    .title {
+        font-size: 30px;
+        font-weight: 500;
+        width: 60vmax;
+    }
+
+    .content {
+        width: 80vh;
+    }
+
+    .container-carros {
+        width: 75%;
+    }
+
+    .car {
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;   
+    }
+
+    .image {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .nfotos {
+        height: 43vh;
+    }
+    
+    .data {
+        width: 100%;
+        height: 25vh;
+    }
+    
+    .car-data {
+        height: 8vh;
+        margin: 0 4vh 2vh 3vh;
+    }
+
+
+    .etiquetas {
+        margin-top: 0;
+    }
+}
 
 /* FIM DO MAIN */
 
