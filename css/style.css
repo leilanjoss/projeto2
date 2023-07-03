@@ -244,11 +244,23 @@ main {
     width: 150vh;
 }
 
-.research {
-    display: flex;
-    flex-direction: column;
-    width: 31.8%;
-    /* background-color: lightyellow; */
+.search-container {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+h1 {
+    margin-bottom: 20px;
+}
+  
+label, select {
+    display: block;
+    margin-bottom: 10px;
+}
+  
+button {
+    margin-top: 10px;
 }
 
 
