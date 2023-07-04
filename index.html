@@ -49,6 +49,35 @@
     </header>
     <!-- MAIN -->
     <main>
+        <!-- INICIO BARRA DE FILTROS -->
+        <div class="imagem-banner-top">
+            <img src="../assets/bannertop.png" alt="Banner Luciandro" id="banner-top">
+        </div>
+        <div class="container">
+            <div class="formularios">
+                <div class="formulario1">
+                    <form>
+                        <select id="qtde-anuncios">
+                            <option value="15" selected>Anúncios por página</option> <!-- Valor precisa ser 15 para mostrar todos os carros quando essa opção estiver selecionada -->
+                            <option value="5">5 anúncios por página</option>
+                            <option value="10">10 anúncios por página</option>
+                            <option value="15">15 anúncios por página</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="formulario2">
+                    <form>
+                        <select id="ordenar">
+                            <option value="ordenar por" selected>Ordenar por</option>
+                            <option value="menorpreco">Menor preço</option>
+                            <option value="maiorpreco">Maior preço</option>
+                            <option value="ano">Ano</option>
+                            <option value="quilometragem">Quilometragem</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+        </div>
         <!-- Título da página -->
         <p class="title">Todos os repasses</p>
         <!-- Div de todo conteúdo editado -->
@@ -692,6 +721,7 @@
     </div>   
     </footer>
     <script src="../js/script.js"></script>
-    <script src="/js/busca.js"></script>
+    <script src="../js/busca.js"></script>
+    <script src="../js/barradefiltro.js"></script>
 </body>
 </html>

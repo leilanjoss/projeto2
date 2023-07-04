@@ -226,6 +226,46 @@ main {
     /* background-color: #1da1f2; */
 }
 
+/* INICIO BARRA DE FILTROS */
+
+#banner-top {
+    height: auto;
+    max-width: 100%;
+}
+
+.imagem-banner-top {
+    text-align: center;
+}
+
+.container {
+    text-align: right;
+}
+
+.formularios {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color:  rgb(210,13,41);
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+#qtde-anuncios, #ordenar {
+    padding: 5px;
+    border-radius: 5px;
+    float: right;
+    height: 40px;
+    width: 200px;
+    background-color: #ffffff;
+}
+
+.formulario1 {
+    margin-right: 5px;
+}
+
+/* FIM BARRA DE FILTROS */
+
 .title {
     font-size: 30px;
     font-weight: 500;
