@@ -15,8 +15,6 @@
     <!--ÍCONES DOS CARROS -->
     <script src="https://kit.fontawesome.com/86b6d4f29e.js" crossorigin="anonymous"></script>
 </head>
-    <title>Carros</title>
-</head>
 <body onload="corFipe()">
     <!-- HEADER -->
     <header class="header-all">
@@ -56,13 +54,157 @@
         <!-- Div de todo conteúdo editado -->
         <div class="content">
             <!-- Div para o formulário de pesquisa -->
-            <div class="research">
-                <h3>FAÇA SUA BUSCA</h3>
+            <div id="blocoBusca">
+                <div>
+                    <h1>Faça sua Busca</h1>
+                    <p>Use as opções abaixo para pesquisar por veículos de sua preferência</p>
+                </div>
+                <div class="busca_e_botões">
+                    <div>
+                    <div id="dados" class="busca"><h4>Dados</h4> <button id="botaoMaisDados" class="botaoMais">+</button></div>
+                        <div id="opcDados" class="show">
+                            <div class="seletor">
+                                <i class="fa-solid fa-gears"></i>
+                                <select id="marca">
+                                    <option value=""><h6>Selecione a Marca</h6></option>
+                                    <option value="FORD">Ford</option>
+                                    <option value="CITROEN">Citroen</option>
+                                    <option value="RENAULT">Renault</option>
+                                    <option value="FIAT">Fiat</option>
+                                    <option value="MITSUBISHI">Mitsubishi</option>
+                                    <option value="NISSAN">Nissan</option>
+                                    <option value="HYUNDAI">Hyundai</option>
+                                    <option value="VOLKSWAGEN">Volkswagen</option>
+                                    <option value="HONDA">Honda</option>
+                                    <option value="CHEVROLET">Chevrolet</option>
+                                </select>
+                            </div>
+                            <div class="seletor">
+                                <i class="fa-solid fa-car-side"></i>
+                                <select id="modelo">
+                                    <option value=""><h6>Selecione o Modelo</h6></option>
+                                </select>
+                            </div>
+                            
+                            <div class="seletor">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <select id="ano">
+                                    <option value=""><h6>Ano Min</h6></option>
+                                </select>
+                            </div>
+                            <div class="seletor">
+                                <i class="fa-solid fa-check-to-slot"></i>
+                                <select id="versao">
+                                    <option value=""><h6>Selecione a Versão</h6></option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                    <div id="localização" class="busca"><h4>Localização</h4><button id="botaoMaisLoc" class="botaoMais">+</button></div>
+                        <div id="opcLoc" class="show">
+                            <div class="seletor">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <select id="estado">
+                                    <option value=""><h6>Selecione o Estado</h6></option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                    <div id="opGerais" class="busca"><h4>Opções Gerais</h4><button id="botaoMaisOpGerais" class="botaoMais">+</button></div>
+                        <div id="opcOpGerais" class="show">
+                            <div class="blocoGerais">
+                            <h5 class="tituloOpGerais">Quilometragem</h5>
+                            <div class="seletorDupla">
+                                <div class="seletor">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <select id="KmMin">
+                                        <option value=""><h6>Km Mín</h6></option>
+                                        <option value="105.000 KM"><h6>105.000 KM</h6></option>
+                                        <option value="1 KM"><h6>1 KM</h6></option>
+                                        <option value="114.000 KM"><h6>114.000 KM</h6></option>
+                                        <option value="114.000 KM"><h6>114.000 KM</h6></option>
+                                        <option value="80.000 KM"><h6>80.000 KM</h6></option>
+                                        <option value="45.000 KM"><h6>45.000 KM</h6></option>
+                                        <option value="70.000 KM"><h6>70.000 KM</h6></option>
+                                        <option value="99.000 KM"><h6>99.000 KM</h6></option>
+                                        <option value="53.000 KM"><h6>53.000 KM</h6></option>
+                                        <option value="59.000 KM"><h6>59.000 KM</h6></option>
+                                        <option value="69.000 KM"><h6>69.000 KM</h6></option>
+                                    </select>
+                                </div>
+                                <div class="seletor">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <select id="KmMax">
+                                        <option value=""><h6>Km Max</h6></option>
+                                        <option value="105.000 KM"><h6>105.000 KM</h6></option>
+                                        <option value="1 KM"><h6>1 KM</h6></option>
+                                        <option value="114.000 KM"><h6>114.000 KM</h6></option>
+                                        <option value="114.000 KM"><h6>114.000 KM</h6></option>
+                                        <option value="80.000 KM"><h6>80.000 KM</h6></option>
+                                        <option value="45.000 KM"><h6>45.000 KM</h6></option>
+                                        <option value="70.000 KM"><h6>70.000 KM</h6></option>
+                                        <option value="99.000 KM"><h6>99.000 KM</h6></option>
+                                        <option value="53.000 KM"><h6>53.000 KM</h6></option>
+                                        <option value="59.000 KM"><h6>59.000 KM</h6></option>
+                                        <option value="69.000 KM"><h6>69.000 KM</h6></option>
+                                    </select>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="blocoGerais">
+                            <h5 class="tituloOpGerais">Valor do Veículo</h5>
+                            <div class="seletorDupla">
+                                <div class="seletor">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <input type="number" id="ValorMin" placeholder="Valor mínimo">
+                                </div>
+                                <div class="seletor">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <input type="number" id="ValorMax" placeholder="Valor Max">
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="buscar_limpar">
+                        <div id="buscar"><button class="btn">Buscar</button></div>
+                        <div id="limpar"><button class="btn">Limpar</button></div>
+                    </div>
+                </div>
             </div>
             <!-- div para todos os carros que irão aparecer junto com-->
             <div class="container-carros">
                 <h3>ENCONTRE REPASSES EM TODO O BRASIL</h3>
-                <p class="description"><span id="found">X</span> veículos encontrados</p>
+                <p class="description"><span id="found">15</span> veículos encontrados</p>
                 <div id="todos-carros">
                     <!-- carro 1 -->
                     <section class="car" id="car1">
@@ -79,11 +221,11 @@
                             </div>
                             <div class="car-data">
                                 <div class="esquerda">
-                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar1">  2013/2013</p></span>
-                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="local1">  105.000 KM</p></span>
+                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar">  2013/2013</p></span>
+                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="localcar">  SC</p></span>
                                 </div>
                                 <div class="direita">
-                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom1">  SC</p></span>
+                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom">  105.000 KM</p></span>
                                     <span class="info"><i class="fa-solid fa-car" style="color: #bababa;"></i><p id="placa1"> F**-***4</p></span>
                                 </div>
                             </div>
@@ -108,11 +250,11 @@
                             </div>
                             <div class="car-data">
                                 <div class="esquerda">
-                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar2">2018/2019</p></span>
-                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="local2">  SC</p></span>
+                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar">2018/2019</p></span>
+                                    <span class="infoLocal"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="localcar">  SC</p></span>
                                 </div>
                                 <div class="direita">
-                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom2">  1 KM</p></span>
+                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom">  1 KM</p></span>
                                     <span class="info"><i class="fa-solid fa-car" style="color: #bababa;"></i><p id="placa2">  Q**-***4</p></span>
                                 </div>
                             </div>
@@ -137,11 +279,11 @@
                             </div>
                             <div class="car-data">
                                 <div class="esquerda">
-                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar3">2014/2015</p></span>
-                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="local3">SC</p></span>
+                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar">2014/2015</p></span>
+                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="localcar">SC</p></span>
                                 </div>
                                 <div class="direita">
-                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom3">114.000 KM</p></span>
+                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom">114.000 KM</p></span>
                                     <span class="info"><i class="fa-solid fa-car" style="color: #bababa;"></i><p id="placa3">M**-***8</p></span>
                                 </div>
                             </div>
@@ -162,15 +304,15 @@
                         <div class="data">
                             <div class="marca-modelo">
                                 <h1 class="marca" id="marca4">VW - VOLKSWAGEN</h1>
-                                <p class="modelo" id="modelo4">GOL (NOVO) 1.0 MI TOTAL FLEX 8V 4P</p>
+                                <p class="modelo" id="modelo4">GOL (NOVO)</p>
                             </div>
                             <div class="car-data">
                                 <div class="esquerda">
-                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar2">2012/2013</p></span>
-                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="local2">SC</p></span>
+                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar">2012/2013</p></span>
+                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="localcar">SC</p></span>
                                 </div>
                                 <div class="direita">
-                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom2">268.000 KM</p></span>
+                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom">268.000 KM</p></span>
                                     <span class="info"><i class="fa-solid fa-car" style="color: #bababa;"></i><p id="placa2">M**-***4</p></span>
                                 </div>
                             </div>
@@ -195,11 +337,11 @@
                             </div>
                             <div class="car-data">
                                 <div class="esquerda">
-                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar5">2020/2021</p></span>
-                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="local5">SC</p></span>
+                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar">2020/2021</p></span>
+                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="localcar">SC</p></span>
                                 </div>
                                 <div class="direita">
-                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom5">80.000 KM</p></span>
+                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom">80.000 KM</p></span>
                                     <span class="info"><i class="fa-solid fa-car" style="color: #bababa;"></i><p id="placa5">R**-***5</p></span>
                                 </div>
                             </div>
@@ -224,11 +366,11 @@
                             </div>
                             <div class="car-data">
                                 <div class="esquerda">
-                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar6">2017/2018</p></span>
-                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="local6">SC</p></span>
+                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar">2017/2018</p></span>
+                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="localcar">SC</p></span>
                                 </div>
                                 <div class="direita">
-                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom6">45.000 KM</p></span>
+                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom">45.000 KM</p></span>
                                     <span class="info"><i class="fa-solid fa-car" style="color: #bababa;"></i><p id="placa6">Q**-***9</p></span>
                                 </div>
                             </div>
@@ -248,16 +390,16 @@
                         </div>
                         <div class="data">
                             <div class="marca-modelo">
-                                <h1 class="marca" id="marca7">CITROËN</h1>
+                                <h1 class="marca" id="marca7">CITROEN</h1>
                                 <p class="modelo" id="modelo7">C3 EXCL./EXCL.SOLAR./SONORA 1.6 FLEX AUT.</p>
                             </div>
                             <div class="car-data">
                                 <div class="esquerda">
-                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar7">2011/2012</p></span>
-                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="local7">SC</p></span>
+                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar">2011/2012</p></span>
+                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="localcar">SC</p></span>
                                 </div>
                                 <div class="direita">
-                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom7">70.000 KM</p></span>
+                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom">70.000 KM</p></span>
                                     <span class="info"><i class="fa-solid fa-car" style="color: #bababa;"></i><p id="placa7">E**-***0</p></span>
                                 </div>
                             </div>
@@ -282,11 +424,11 @@
                             </div>
                             <div class="car-data">
                                 <div class="esquerda">
-                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar8">2015/2016</p></span>
-                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="local8">SC</p></span>
+                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar">2015/2016</p></span>
+                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="localcar">SC</p></span>
                                 </div>
                                 <div class="direita">
-                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom8">99.000 KM</p></span>
+                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom">99.000 KM</p></span>
                                     <span class="info"><i class="fa-solid fa-car" style="color: #bababa;"></i><p id="placa8">Q**-***4</p></span>
                                 </div>
                             </div>
@@ -311,11 +453,11 @@
                             </div>
                             <div class="car-data">
                                 <div class="esquerda">
-                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar9">2007/2007 </p></span>
-                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="local9">SC</p></span>
+                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar">2007/2007 </p></span>
+                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="localcar">SC</p></span>
                                 </div>
                                 <div class="direita">
-                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom9">1 KM</p></span>
+                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom">1 KM</p></span>
                                     <span class="info"><i class="fa-solid fa-car" style="color: #bababa;"></i><p id="placa9">A**-***4</p></span>
                                 </div>
                             </div>
@@ -341,11 +483,11 @@
                             </div>
                             <div class="car-data">
                                 <div class="esquerda">
-                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar10">2009/2009</p></span>
-                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="local10">SC</p></span>
+                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar">2009/2009</p></span>
+                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="localcar">SC</p></span>
                                 </div>
                                 <div class="direita">
-                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom10">1 KM</p></span>
+                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom">1 KM</p></span>
                                     <span class="info"><i class="fa-solid fa-car" style="color: #bababa;"></i><p id="placa10">E**-***0</p></span>
                                 </div>
                             </div>
@@ -370,11 +512,11 @@
                             </div>
                             <div class="car-data">
                                 <div class="esquerda">
-                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar11">2018/2019</p></span>
-                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="local11">SC</p></span>
+                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar">2018/2019</p></span>
+                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="localcar">SC</p></span>
                                 </div>
                                 <div class="direita">
-                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom11">53.000 KM</p></span>
+                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom">53.000 KM</p></span>
                                     <span class="info"><i class="fa-solid fa-car" style="color: #bababa;"></i><p id="placa11">Q**-***1</p></span>
                                 </div>
                             </div>
@@ -399,11 +541,11 @@
                             </div>
                             <div class="car-data">
                                 <div class="esquerda">
-                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar12">2018/2019</p></span>
-                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="local12">SC</p></span>
+                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar">2018/2019</p></span>
+                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="localcar">SC</p></span>
                                 </div>
                                 <div class="direita">
-                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom12">80.000 KM</p></span>
+                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom">80.000 KM</p></span>
                                     <span class="info"><i class="fa-solid fa-car" style="color: #bababa;"></i><p id="placa12">Q**-***2</p></span>
                                 </div>
                             </div>
@@ -428,11 +570,11 @@
                             </div>
                             <div class="car-data">
                                 <div class="esquerda">
-                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar13">2020/2021</p></span>
-                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="local13">SC</p></span>
+                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar">2020/2021</p></span>
+                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="localcar">SC</p></span>
                                 </div>
                                 <div class="direita">
-                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom13">59.000 KM</p></span>
+                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom">59.000 KM</p></span>
                                     <span class="info"><i class="fa-solid fa-car" style="color: #bababa;"></i><p id="placa13">R**-***5</p></span>
                                 </div>
                             </div>
@@ -457,11 +599,11 @@
                             </div>
                             <div class="car-data">
                                 <div class="esquerda">
-                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar14">2019/2020</p></span>
-                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="local14">SC</p></span>
+                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar">2019/2020</p></span>
+                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="localcar">SC</p></span>
                                 </div>
                                 <div class="direita">
-                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom14">69.000 KM</p></span>
+                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom">69.000 KM</p></span>
                                     <span class="info"><i class="fa-solid fa-car" style="color: #bababa;"></i><p id="placa14">Q**-***1</p></span>
                                 </div>
                             </div>
@@ -486,11 +628,11 @@
                             </div>
                             <div class="car-data">
                                 <div class="esquerda">
-                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar15">2021/2021</p></span>
-                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="local15">SC</p></span>
+                                    <span class="info"><i class="fa-regular fa-calendar-days" style="color: #bababa;"></i><p id="anocar">2021/2021</p></span>
+                                    <span class="info"><i class="fa-solid fa-location-dot" style="color: #bababa;"></i><p id="localcar">SC</p></span>
                                 </div>
                                 <div class="direita">
-                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom15">1 KM</p></span>
+                                    <span class="info"><i class="fa-solid fa-gauge" style="color: #bababa;"></i><p id="quilom">1 KM</p></span>
                                     <span class="info"><i class="fa-solid fa-car" style="color: #bababa;"></i><p id="placa15">J**-***7</p></span>
                                 </div>
                             </div>
@@ -549,6 +691,7 @@
         </div>
     </div>   
     </footer>
+    <script src="../js/script.js"></script>
+    <script src="/js/busca.js"></script>
 </body>
-<script src="../js/script.js"></script>
 </html>

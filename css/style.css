@@ -221,7 +221,8 @@ nav{
 /* MAIN */
 main {
     
-    margin-top: 57px; 
+    margin-top: 57px;
+    margin-bottom: 40vh;
     /* background-color: #1da1f2; */
 }
 
@@ -244,12 +245,24 @@ main {
     width: 150vh;
 }
 
-.research {
-    display: flex;
-    flex-direction: column;
-    width: 31.8%;
-    /* background-color: lightyellow; */
+/*.search-container {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+h1 {
+    margin-bottom: 20px;
 }
+  
+label, select {
+    display: block;
+    margin-bottom: 10px;
+}
+  
+button {
+    margin-top: 10px;
+}*/
 
 
 .container-carros {
@@ -380,6 +393,9 @@ main {
 footer{
     color: white;
     width: 100%;
+    bottom: 0;
+    position: relative;
+    
 }
 .footer-container {
     display: flex;
@@ -583,3 +599,161 @@ footer{
     }
 }
 /*Fim do responsivo do FOOTER*/
+
+/*BARRA DE BUSCA*/
+
+#blocoBusca{
+    background-color:#e6e7e8;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+#pagina{
+    display: flex;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-right: 10%;
+    gap: 2%;
+    background-color: #e6e7e8;
+    height: 900px;
+}
+
+.busca{
+    background-color: #cacccb;
+    padding: 3%;
+    color: #666666;
+    display: flex;
+    justify-content:space-between;
+}
+
+.busca_e_botões{
+    background-color: #e6e7e8;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.buscar_limpar{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.btn{
+    background-color: #393738;
+    border-radius: 20px; 
+    padding: 10px 20px; 
+    border: none; 
+    color: #ffffff;
+    width: 100%;
+    cursor: pointer;
+    
+}
+
+.btn:hover{
+    background-color: rgb(210,13,41);
+}
+
+body{
+    background-color:#e6e7e8;
+}
+
+.seletor{
+    background-color:  #393738;
+    color: #ffffff;
+    border: 1px solid #393738;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding-left: 10px;
+    align-items: center;
+    
+}
+
+select {
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+  
+#opcDados {
+display: none;
+}
+
+#opcDados.show {
+display: block;
+display: flex;
+flex-direction: column;
+background-color: #ffffff;
+padding: 5%;
+gap: 8px
+}
+
+#opcLoc {
+    display: none;
+    }
+    
+#opcLoc.show {
+display: block;
+display: flex;
+flex-direction: column;
+background-color: #ffffff;
+padding: 5%;
+gap: 8px
+}
+
+#opcOpGerais {
+    display: none;
+    }
+    
+#opcOpGerais.show {
+display: block;
+display: flex;
+flex-direction: column;
+background-color: #ffffff;
+padding: 5%;
+gap: 20px;
+}
+
+.botaoMais {
+right: 0;
+color: #666666;
+border: none;
+background-color: transparent;
+font-size: 20px;
+cursor: pointer;
+}
+  
+.seletorDupla{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 15px;
+}
+
+.tituloOpGerais{
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+input{
+    padding: 10px;
+    border: none;
+    width: 110px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.blocoGerais{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
